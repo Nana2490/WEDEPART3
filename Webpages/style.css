@@ -1,0 +1,494 @@
+/*That is easier to read and will be the main text layout of the website acccording to the proposal*/
+* {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif;
+font-size: 35px;
+}
+
+/* Enhanced Home Page Header Styling*/
+body.home-page header {
+  position: relative;
+  padding: 30px 30px 80px;
+  overflow: hidden;
+  border-radius: 12px;
+  text-align: center;
+  background: linear-gradient(270deg, #7a44f5, #c98fff, #7a44f5);
+  background-size: 600% 600%;
+  animation: gradientShift 25s ease infinite; /* Controls the speed of the gradient on the header*/
+  box-shadow: 0 12px 30px rgba(122, 68, 245, 0.6);
+}
+
+/* Animated Moving Background Gradient */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Logo Styling With Subtle Glow & Hover Animation on Home-Page*/
+body.home-page header img {
+  display: inline-block;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 20px rgba(122, 68, 245, 0.7);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+/* Animation On The Logo Is Activated*/
+body.home-page header img:hover {
+  transform: scale(1.15) rotate(10deg);
+  box-shadow: 0 0 30px rgba(200, 143, 255, 1);
+}
+
+/* Navigation Style  For The Header At The Beginning Of The Page*/
+body.home-page nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+/*This Adds The Colour and Removes Links Underline*/
+body.home-page nav ul li a {
+  color: #10022a;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+
+body.home-page nav ul li:hover {
+  background: linear-gradient(270deg, #9c7dff, #e2e0e5);
+  box-shadow: 0 6px 15px rgba(138, 71, 255, 0.7);
+  border-radius: 20%;
+  padding: 2%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body.home-page header {
+    padding: 40px 20px 60px;
+  }
+  body.home-page header h1 {
+    font-size: 44px;
+  }
+  body.home-page .menu-home {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  body.home-page nav ul {
+    gap: 25px;
+    font-size: 25px;
+  }
+}
+
+/* General Header Styling for All Pages */
+body header {
+  position: relative;
+  padding: 40px 20px 60px; /* Slightly less padding than the homepage */
+  overflow: hidden;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(270deg, #7a44f5, #c98fff);
+  box-shadow: 0 8px 20px rgba(122, 68, 245, 0.4);
+}
+
+/* Header main title for all pages */
+body header h1 {
+  font-size: 49px; /* Slightly smaller than homepage */
+  margin: 0 0 16px;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.5),
+    0 2px 6px rgba(122, 68, 245, 0.7);
+  position: relative;
+  z-index: 1;
+}
+
+/* Logo styling for all pages */
+body header img {
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(122, 68, 245, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Activating The Animation*/
+body header img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(200, 143, 255, 0.8);
+}
+
+/* Navigation style for all pages */
+nav ul {
+  list-style: none;
+  padding: 30px 30px 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  border-radius: 12px;
+}
+
+nav ul li a {
+  color: #120a21;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul li:hover {
+  background: linear-gradient(270deg, #e1dbf7, #7a44f5);
+  box-shadow: 0 4px 10px rgba(138, 71, 255, 0.5);
+}
+
+/* Responsive adjustments for general header */
+@media (max-width: 768px) {
+  body header {
+    padding: 30px 15px 50px;
+  }
+  body header h1 {
+    font-size: 36px;
+  }
+}
+
+/* Main content styling area */
+main {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(91, 42, 134, 0.15);
+  background-image: url('imageshefit/womaninpurpleandblackbackground.png');
+background-repeat: no-repeat;
+background-size: cover;
+color: #f0e5e5;
+}
+/*Titles and paragraphs*/
+.title2 {
+text-align: center;
+font-size: 30px;
+}
+
+/* Pop-up animation for welcome text */
+.welcome-text {
+  font-size: 3rem;
+  font-weight: 700;
+  white-space: pre-line; /* preserves spaces */
+  user-select: none;
+  animation: popUpMove 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px) scale(0.9);
+  color: #3b0967; /* Example color, adjust as needed */
+  text-align: center;
+  margin: 15px auto;
+}
+
+/* Keyframes for pop-up movement */
+@keyframes popUpMove {
+  0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+  }
+  60% {
+      opacity: 1;
+      transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+  }
+}
+
+/* This is the responsive scaling for smaller screens */
+@media (max-width: 600px) {
+  .welcome-text {
+      font-size: 2rem;
+      padding: 0 10px;
+      white-space: normal;
+  }
+}
+
+/* main styling  improved*/
+main h2 {
+  color: #9a51d9;
+    margin-bottom: 6px;
+  }
+
+  main p {
+    margin: 15px 0;
+  }
+  
+  /* Images */
+  main img {
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 6px rgba(48, 47, 47, 0.1);
+  }
+  /* Image grid with increased gap */
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px; /*This is the increased gap */
+  justify-content: center;
+}
+
+.grid-item {
+  text-align: center;
+  max-width: 220px;
+}
+
+.grid-item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.grid-item img:hover {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+  z-index: 1; /* Bring the hovered image to the front */
+}
+
+/* Juice bar styling */
+.juicebar {
+  max-width: 220px;
+  margin: 0 auto 50px auto;
+  border: 2px solid #d8b4f8;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px 15px 25px;
+  box-shadow: 0 2px 8px rgba(91, 42, 134, 0.1);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.juicebar img {
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 15px 0 10px;
+  width: 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.juicebar img:hover {
+  transform: scale(1.1);
+}
+
+.juicebar-text {
+  text-align: center;
+  color: white;
+}
+
+/* Fun Features Section */
+.fun-features {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* Progress bars container */
+.progress-container {
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 2px solid #d8b4f8;
+  box-shadow: 0 2px 8px rgba(91, 42, 134, 0.15);
+}
+
+.progress-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.progress-bar {
+  background-color: #e5d8f7;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.progress-fill {
+  background: linear-gradient(45deg, #7a44f5, #c98fff);
+  height: 28px;
+  width: 0;
+  border-radius: 15px;
+  color:rgb(67, 61, 61);
+  text-align: right;
+  padding-right: 10px;
+  line-height: 28px;
+  font-weight: bold;
+  transition: width 2s ease;
+}
+
+.progress-fill.strength { width: 90%; }
+.progress-fill.endurance { width: 75%; }
+.progress-fill.flexibility { width: 60%; }
+
+/* Stats Boxes */
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1eaf7;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(91,42,134,0.15);
+  padding: 15px;
+  gap: 20px;
+}
+
+.stat-box {
+  flex: 1;
+  text-align: center;
+  padding: 15px 10px;
+  background: linear-gradient(135deg, #7a44f5, #c98fff);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 0 12px rgba(190, 133, 255, 0.7);
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+/* Remove underline from links inside .stat-box */
+.stat-box a {
+  text-decoration: none; /* Removes the underline */
+  color: white; /* This part ensures the link color matches the text color */
+}
+
+.stat-box a:hover {
+  text-decoration: underline;
+}
+
+.stat-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(190, 133, 255, 1);
+  cursor: default;
+}
+
+/* Motivational quote */
+.quote-section {
+  background: linear-gradient(90deg, #b993d6, #8ca6db);
+  color: white;
+  font-style: italic;
+  padding: 30px 40px;
+  margin: 50px auto;
+  max-width: 800px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.6rem;
+  box-shadow: 0 6px 20px rgba(140, 166, 219, 0.7);
+  user-select: none;
+}
+
+/* Fitness tips cards */
+.tips-container {
+  text-align: center;
+  display: grid;
+  gap: 25px;
+  margin-bottom: 50px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.tip-card {
+  background-color:#f1eaf7;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(120, 80, 200, 0.15);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-bottom: 15px;
+}
+
+.tip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(120, 80, 200, 0.4);
+}
+
+.tip-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-bottom: 3px solid #9c72e6;
+}
+
+.tip-card h4 {
+  margin: 15px 15px 10px;
+  color: #5b2a86;
+  font-size: 1.3rem;
+}
+
+.tip-card p {
+  margin: 0 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .dropdown-summary {
+    padding: 10px 18px;
+  }
+  .dropdown-content {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+/* Footer updated styling*/
+footer {
+
+  background-color: #5b2a86;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+html, body{
+  height: 100%; /* makes sure it takes the full height */
+}
+
+main {
+min-height: 100vh; /* allows the main content to take up available space*/
+margin-bottom: -100px;
+}
+.push-footer {
+  height: 100px;
+}
+
+footer img {
+  margin: 0 5px;
+  vertical-align: middle;
+}
+  .page-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
