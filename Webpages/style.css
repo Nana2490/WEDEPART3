@@ -1,3 +1,30 @@
+/* Pointer cursor and smooth transitions for all buttons */
+button {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and focus effects for buttons */
+button:hover,
+button:focus {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(122, 68, 245, 0.4);
+  outline: none;
+}
+
+/* Pointer cursor and smooth transitions for anchor buttons */
+a.button {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and focus effects for anchor buttons */
+a.button:hover,
+a.button:focus {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(122, 68, 245, 0.4);
+  outline: none;
+}
 
 /* Universal Header Styling for all pages including homepage */
 body header {
@@ -449,45 +476,3 @@ textarea {
   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for visual feedback */
 }
 
-/* Pop-up styling for messages */
-.popup {
-  position: fixed; /* Fix to viewport */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Perfect centering */
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-  border: 2px solid #7a44f5; /* Border using theme color */
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Inner spacing */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Drop shadow */
-  z-index: 1000; /* On top of other content */
-  text-align: center; /* Centered text */
-  display: none; /* Initially hidden */
-  font-size: 1.2rem; /* Legible font size */
-  font-weight: 700; /* Bold text */
-  color: #3b0967; /* Theme text color */
-  user-select: none; /* Prevent user text selection */
-}
-
-/* Input and select field base styles */
-input,
-select,
-textarea {
-  width: 100%;
-  max-width: 500px;
-  padding: 10px;
-  border: 2px solid #d8b4f8;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: 'Times New Roman', Times, serif;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Invalid input highlight */
-input.invalid,
-select.invalid,
-textarea.invalid {
-  border-color: #ff4444; /* Red border for error */
-  box-shadow: 0 0 8px #ff4444; /* Red glow */
-  outline: none; /* Remove default focus outline */
-}
