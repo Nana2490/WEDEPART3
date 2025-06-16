@@ -2,108 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Character encoding and responsive viewport meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link href="style.css" rel="stylesheet">
-    <script defer src="javascript.js">
-    </script>
+    <!-- Link external CSS stylesheet -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- Link external JavaScript file with defer for async loading -->
+    <script defer src="javascript.js"></script>
 </head>
 
 <body>
     <header>
+        <!-- Gym Logo linking to homepage -->
         <a href="home.html">
-       <img src="imageshefit/logo.png" alt="SheFit Gym Logo"
-             width="100" />
-       </a>
-       
-     <h1>SheFit Fitness Gym
-     </h1>
-     <nav>
-    <ul>
-        <li><a href="home.html">Home</a>
-       </li>
-        <li><a href="aboutus.html">About Us</a>
-        </li>
-        <li><a href="classes.html">Classes</a>
-        </li>
-        <li><a href="signup.html">Signup</a>
-        </li>
-        <li><a href="swimming.html">Swimming</a>
-        </li>
-        <li><a href="contactus.html">Contact Us</a>
-        </li>
-        <li><a href="enquiries.html">Enquiries</a>
-        </li>
-    </ul>
-    </nav>
+            <img src="imageshefit/logo.png" alt="SheFit Gym Logo" width="100" />
+        </a>
+        <h1>SheFit Fitness Gym</h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="swimming.html">Swimming</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+            </ul>
+        </nav>
         <hr />
-     </header>
+    </header>
 
-        <main>
-    <img src="imageshefit/training.png" alt="Training Image"
-        width="300" />
-    <br>
-    <h1>Sign Up and Begin Your Fitness Journey Now
-    </h1>
-    <form action="thankyou2.html" method="GET">
-        <label for="name">Full Name:
-        </label>
-        <input type="text" required><br>
-        <br>
-        <label for="email">Email:
-        </label>
-        <input type="email" required><br>
-        <br>
-        <label for="phone">Phone Number:
-        </label>
-        <input type="number" required><br>
-        <br>
-        <p2>New members get two free 1 on 1 sessions of their preferred classes,<br>
-            this is a great way to welcome you into the SheFit Fitness family 😁
-        </p2><br><br>
-        <label for="class">Preferred Class:
-        </label>
-        <select id="class" name="class">
-            <option value="yoga">Yoga</option>
-            <option value="pilates">Pilates</option>
-            <option value="strength">Strength Training</option>
-            <option value="cardio">Cardio Blast</option>
-            <option value="hiit">HIIT Workouts</option>
-            <option value="dance">Dance Fitness</option>
-            <option value="swim">Swimming Lessons/Aqua Aerobics</option>
-        </select><br>
-        <br>
-        <button type="submit">Register</button>
-        <p> If you have any enquiries, please click 
+    <main>
+        <!-- Image below header -->
+        <img src="imageshefit/training.png" alt="Training Image" width="300" />
+        <br />
+        <h1>Sign Up and Begin Your Fitness Journey Now</h1>
+
+        <!--
+          SIGNUP FORM
+          - ID added for JavaScript form submission handling
+          - novalidate disables default HTML5 validation, allowing custom validation via JS
+        -->
+        <form id="signup-form" novalidate>
+            <!-- Full Name field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required />
+            <br /><br />
+
+            <!-- Email field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+            <br /><br />
+
+            <!-- Phone Number field -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required />
+            <br /><br />
+
+            <!-- Informational text -->
+            <p>
+                New members get two free 1 on 1 sessions of their preferred classes,<br />
+                this is a great way to welcome you into the SheFit Fitness family 😁
+            </p>
+            <br /><br />
+
+            <!-- Preferred Class dropdown -->
+            <label for="class">Preferred Class:</label>
+            <select id="class" name="class" required>
+                <option value="">Select a class</option>
+                <option value="yoga">Yoga</option>
+                <option value="pilates">Pilates</option>
+                <option value="strength">Strength Training</option>
+                <option value="cardio">Cardio Blast</option>
+                <option value="hiit">HIIT Workouts</option>
+                <option value="dance">Dance Fitness</option>
+                <option value="swim">Swimming Lessons/Aqua Aerobics</option>
+            </select>
+            <br /><br />
+
+            <!-- Submit button for registration -->
+            <button type="submit">Register</button>
+
+            <!-- Link to enquiries page -->
+            <p>
+                If you have any enquiries, please click
                 <a href="enquiries.html">
-                  <button type="button">Here
-            </button>
+                    <button type="button">Here</button>
+                </a>
+            </p>
+
+            <!-- Spacer for footer positioning -->
+            <div class="push-footer"></div>
+        </form>
+
+        <!-- Pop-up div for showing success or error messages -->
+        <div id="popup" class="popup" role="alert" aria-live="assertive" aria-atomic="true"></div>
+    </main>
+
+    <footer>
+        <hr />
+        <!-- Privacy statement assuring user data protection -->
+        <p>
+            <strong>Privacy Statement:</strong> SheFit Fitness Gym is committed to protecting your personal
+            information. We do not share or sell your details to any third parties.
+        </p>
+        <p>&copy; 2025 Mphatso Phiri. All rights reserved.</p>
+        <!-- Social media links with alt text for accessibility -->
+        <p>
+            Follow us:
+            <a href="https://facebook.com" target="_blank" title="Facebook">
+                <img src="imageshefit/facebooklogo.png" width="20" alt="Facebook" />
+            </a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">
+                <img src="imageshefit/instagramlogo.png" width="20" alt="Instagram" />
+            </a>
+            <a href="https://tiktok.com" target="_blank" title="TikTok">
+                <img src="imageshefit/tiktoklogo.png" width="20" alt="TikTok" />
             </a>
         </p>
-        <div class="push-footer"></div> <!-- Footer of the page updatetd coding from part 1 -->
-    </form>
-        </main>
-
-        <footer>
-            <hr />
-            <p><strong>Privacy Statement:</strong> SheFit Fitness Gym is committed to protecting your personal information. We
-              do not share or sell your details to any third parties.</p>
-            <p>&copy; 2025 Mphatso Phiri. All rights reserved.
-            </p>
-            <p>
-              Follow us:
-              <a href="https://facebook.com" target="_blank" title="Facebook">
-                <img src="imageshefit/facebooklogo.png" width="20" alt="Facebook" />
-              </a>
-              <a href="https://instagram.com" target="_blank" title="Instagram">
-                <img src="imageshefit/instagramlogo.png" width="20" alt="Instagram" />
-              </a>
-              <a href="https://tiktok.com" target="_blank" title="TikTok">
-                <img src="imageshefit/tiktoklogo.png" width="20" alt="TikTok" />
-              </a>
-            </p>
-          </footer>
+    </footer>
 </body>
 
 </html>

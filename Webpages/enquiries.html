@@ -1,22 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
+  <!-- Responsive meta tag to ensure proper scaling on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Enquiries</title>
+  <!-- Link to external CSS file -->
   <link href="style.css" rel="stylesheet">
-  <script defer src="javascript.js">
-  </script>
+  <!-- Link to external JavaScript file, loaded defer to run after HTML parsing -->
+  <script defer src="javascript.js"></script>
 </head>
 
 <body>
   <header>
+    <!-- Logo linking back to the homepage -->
     <a href="home.html">
       <img src="imageshefit/logo.png" width="100" alt="SheFit Logo" />
     </a>
+
+    <!-- Main page header title -->
     <h1>SheFit Fitness Gym</h1>
+
+    <!-- Navigation menu with links to other pages -->
     <nav>
       <ul>
         <li><a href="home.html">Home</a></li>
@@ -28,32 +34,61 @@
         <li><a href="enquiries.html">Enquiries</a></li>
       </ul>
     </nav>
+
+    <!-- Horizontal line to separate header visually -->
     <hr />
   </header>
 
   <main>
-  <h1>If you have any questions or comments, please let us know.</h1>
+    <!-- Page main headline -->
+    <h1>If you have any questions or comments, please let us know.</h1>
 
-  <form action="thankyou3.html" method="GET">
-    <label for="name">Full Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+    <!-- 
+      Enquiry form with:
+      - ID for JS targeting
+      - 'novalidate' disables native HTML validation (so JS can fully handle it)
+      - ARIA attributes to improve accessibility (will be set in JS)
+    -->
+    <form id="enquiry-form" novalidate>
+      
+      <!-- Full Name input field -->
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+      <!-- Email input field -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-    <label for="comments">Please Enter Comment:</label><br>
-    <textarea id="comments" name="comments" placeholder="Enter your comments..." rows="4" cols="40" required></textarea><br><br>
+      <!-- Comments textarea -->
+      <label for="comments">Please Enter Comment:</label><br>
+      <textarea id="comments" name="comments" placeholder="Enter your comments..." rows="4" cols="40" required></textarea><br><br>
 
-    <button type="submit">Submit</button>
-  </form>
-  <div class="push-footer"></div> <!-- Footer of the page updatetd coding from part 1 -->
-</main>
-  
+      <!-- Submit button -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- 
+      Pop-up div for displaying success or error messages.
+      - Initially hidden by CSS
+      - ARIA roles for accessibility (screen readers will notify user changes here)
+    -->
+    <div id="popup" class="popup" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+    <!-- Spacer div to push footer down -->
+    <div class="push-footer"></div> 
+  </main>
+
   <footer>
+    <!-- Footer horizontal line separator -->
     <hr />
-    <p><strong>Privacy Statement:</strong> SheFit Fitness Gym is committed to protecting your personal information. We
-      do not share or sell your details to any third parties.</p>
+
+    <!-- Privacy statement -->
+    <p><strong>Privacy Statement:</strong> SheFit Fitness Gym is committed to protecting your personal information. We do not share or sell your details to any third parties.</p>
+
+    <!-- Copyright notice -->
     <p>&copy; 2025 Mphatso Phiri. All rights reserved.</p>
+
+    <!-- Social media links with appropriate alt text and titles for accessibility -->
     <p>
       Follow us:
       <a href="https://facebook.com" target="_blank" title="Facebook">

@@ -1,173 +1,97 @@
-/*That is easier to read and will be the main text layout of the website acccording to the proposal*/
-* {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
-box-sizing: border-box;
-font-family: 'Times New Roman', Times, serif;
-font-size: 35px;
-}
 
-/* Enhanced Home Page Header Styling*/
-body.home-page header {
-  position: relative;
-  padding: 30px 30px 80px;
-  overflow: hidden;
-  border-radius: 12px;
-  text-align: center;
-  background: linear-gradient(270deg, #7a44f5, #c98fff, #7a44f5);
-  background-size: 600% 600%;
-  animation: gradientShift 25s ease infinite; /* Controls the speed of the gradient on the header*/
-  box-shadow: 0 12px 30px rgba(122, 68, 245, 0.6);
-}
-
-/* Animated Moving Background Gradient */
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Logo Styling With Subtle Glow & Hover Animation on Home-Page*/
-body.home-page header img {
-  display: inline-block;
-  margin-bottom: 20px;
-  border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 0 20px rgba(122, 68, 245, 0.7);
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  position: relative;
-  z-index: 1;
-}
-/* Animation On The Logo Is Activated*/
-body.home-page header img:hover {
-  transform: scale(1.15) rotate(10deg);
-  box-shadow: 0 0 30px rgba(200, 143, 255, 1);
-}
-
-/* Navigation Style  For The Header At The Beginning Of The Page*/
-body.home-page nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  font-weight: 700;
-  position: relative;
-  z-index: 1;
-  flex-wrap: wrap;
-}
-
-/*This Adds The Colour and Removes Links Underline*/
-body.home-page nav ul li a {
-  color: #10022a;
-  text-decoration: none;
-  transition: color 0.5s ease;
-  position: relative;
-  z-index: 1;
-}
-
-body.home-page nav ul li:hover {
-  background: linear-gradient(270deg, #9c7dff, #e2e0e5);
-  box-shadow: 0 6px 15px rgba(138, 71, 255, 0.7);
-  border-radius: 20%;
-  padding: 2%;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  body.home-page header {
-    padding: 40px 20px 60px;
-  }
-  body.home-page header h1 {
-    font-size: 44px;
-  }
-  body.home-page .menu-home {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  body.home-page nav ul {
-    gap: 25px;
-    font-size: 25px;
-  }
-}
-
-/* General Header Styling for All Pages */
+/* Universal Header Styling for all pages including homepage */
 body header {
-  position: relative;
-  padding: 40px 20px 60px; /* Slightly less padding than the homepage */
-  overflow: hidden;
-  text-align: center;
-  font-weight: 700;
-  background: linear-gradient(270deg, #7a44f5, #c98fff);
-  box-shadow: 0 8px 20px rgba(122, 68, 245, 0.4);
+  position: relative; /* Allows for absolute positioning of child elements if needed */
+  padding: 40px 20px 60px; /* Top, horizontal, and bottom padding for spacing */
+  overflow: hidden; /* Hides any overflow content */
+  text-align: center; /* Centers text within the header */
+  font-weight: 700; /* Bold font weight for emphasis */
+  background: linear-gradient(270deg, #7a44f5, #c98fff); /* Gradient background from purple to pink */
+  box-shadow: 0 8px 20px rgba(122, 68, 245, 0.4); /* Soft shadow for depth */
+  border-radius: 12px; /* Rounded corners for a modern look */
 }
 
-/* Header main title for all pages */
+/* Header main title */
 body header h1 {
-  font-size: 49px; /* Slightly smaller than homepage */
-  margin: 0 0 16px;
-  letter-spacing: 2px;
-  text-shadow:
-    0 0 4px rgba(255, 255, 255, 0.5),
-    0 2px 6px rgba(122, 68, 245, 0.7);
-  position: relative;
-  z-index: 1;
+  font-size: 48px; /* Large font size for the main title */
+  margin: 0 0 16px; /* No margin on top, bottom margin for spacing */
+  letter-spacing: 2px; /* Slightly increased spacing between letters */
+  text-shadow: /* Adds a shadow effect to the text for depth */
+    0 0 4px rgba(255, 255, 255, 0.5), /* Soft white shadow */
+    0 2px 6px rgba(122, 68, 245, 0.7); /* Purple shadow for a glowing effect */
+  position: relative; /* Allows for z-index positioning */
+  z-index: 1; /* Ensures the title is above other elements */
 }
 
-/* Logo styling for all pages */
+/* Logo styling */
 body header img {
-  display: inline-block;
-  margin-bottom: 15px;
-  border-radius: 50%;
-  border: 4px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 15px rgba(122, 68, 245, 0.5);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
-  z-index: 1;
+  display: inline-block; /* Allows for margin and padding to be applied */
+  margin-bottom: 15px; /* Space below the logo */
+  border-radius: 50%; /* Circular logo */
+  border: 4px solid rgba(255, 255, 255, 0.3); /* Light border around the logo */
+  box-shadow: 0 0 15px rgba(122, 68, 245, 0.5); /* Soft shadow for depth */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for hover effects */
+  position: relative; /* Allows for z-index positioning */
+  z-index: 1; /* Ensures the logo is above other elements */
 }
 
-/* Activating The Animation*/
+/* Hover effect for logo */
 body header img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(200, 143, 255, 0.8);
+  transform: scale(1.1); /* Slightly enlarges the logo on hover */
+  box-shadow: 0 0 25px rgba(200, 143, 255, 0.8); /* Increases shadow for a glowing effect */
 }
 
-/* Navigation style for all pages */
+/* Navigation styling */
 nav ul {
-  list-style: none;
-  padding: 30px 30px 80px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  position: relative;
-  z-index: 1;
-  flex-wrap: wrap;
-  border-radius: 12px;
+  list-style: none; /* Removes default list styling */
+  padding: 20px 0 40px; /* Vertical padding for spacing */
+  margin: 0 auto; /* Centers the navigation */
+  display: flex; /* Uses flexbox for layout */
+  justify-content: center; /* Centers navigation items */
+  gap: 30px; /* Space between navigation items */
+  position: relative; /* Allows for z-index positioning */
+  z-index: 1; /* Ensures the navigation is above other elements */
+  border-radius: 12px; /* Rounded corners for the navigation background */
+  background: rgba(255, 255, 255, 0.15); /* Light translucent background for contrast */
+  box-shadow: 0 4px 12px rgba(122, 68, 245, 0.15); /* Soft shadow for depth */
 }
 
+/* Navigation links */
 nav ul li a {
-  color: #120a21;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  position: relative;
-  z-index: 1;
+  font-size: 35px; /* Font size for navigation links */
+  font-weight: 700; /* Bold font weight for emphasis */
+  color: #120a21; /* Dark color for text */
+  text-decoration: none; /* Removes underline from links */
+  padding: 10px 20px; /* Padding for clickable area */
+  border-radius: 12px; /* Rounded corners for links */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  display: inline-block; /* Allows for padding and margin to be applied */
 }
 
-nav ul li:hover {
-  background: linear-gradient(270deg, #e1dbf7, #7a44f5);
-  box-shadow: 0 4px 10px rgba(138, 71, 255, 0.5);
+/* Hover and focus states for navigation links */
+nav ul li a:hover,
+nav ul li a:focus {
+  background: linear-gradient(270deg, #e1dbf7, #7a44f5); /* Gradient background on hover */
+  box-shadow: 0 4px 12px rgba(138, 71, 255, 0.5); /* Shadow effect on hover */
+  color: #3b0967; /* Change text color on hover */
+  outline: none; /* Removes default focus outline */
 }
 
-/* Responsive adjustments for general header */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   body header {
-    padding: 30px 15px 50px;
+    padding: 30px 15px 50px; /* Reduced padding for smaller screens */
   }
   body header h1 {
-    font-size: 36px;
+    font-size: 32px; /* Smaller font size for the header title */
+  }
+  nav ul {
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 15px; /* Reduced gap between items */
+  }
+  nav ul li a {
+    font-size: 25px; /* Smaller font size for navigation links */
+    padding: 8px 16px; /* Reduced padding for smaller screens */
   }
 }
 
@@ -492,3 +416,78 @@ footer img {
     display: flex;
     flex-direction: column;
   }
+  /* Pop-up styling for messages */
+.popup {
+  position: fixed; /* Fixed position to overlay on the screen */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for visibility */
+  border: 2px solid #7a44f5; /* Border color matching the theme */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding for inner spacing */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  z-index: 1000; /* Ensure it appears above other content */
+  text-align: center; /* Center text inside the pop-up */
+  display: none; /* Hidden by default */
+  font-size: 1.2rem; /* Font size for readability */
+  color: #3b0967; /* Text color */
+  font-weight: 700; /* Bold text */
+}
+
+/* Highlight for invalid input fields */
+input.invalid,
+textarea.invalid {
+  border-color: #ff4444; /* Red border for invalid fields */
+  box-shadow: 0 0 8px #ff4444; /* Red shadow for emphasis */
+  outline: none; /* Remove default outline */
+}
+
+/* Optional: Add transition for invalid fields */
+input,
+textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for visual feedback */
+}
+
+/* Pop-up styling for messages */
+.popup {
+  position: fixed; /* Fix to viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border: 2px solid #7a44f5; /* Border using theme color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Inner spacing */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  z-index: 1000; /* On top of other content */
+  text-align: center; /* Centered text */
+  display: none; /* Initially hidden */
+  font-size: 1.2rem; /* Legible font size */
+  font-weight: 700; /* Bold text */
+  color: #3b0967; /* Theme text color */
+  user-select: none; /* Prevent user text selection */
+}
+
+/* Input and select field base styles */
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 2px solid #d8b4f8;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Invalid input highlight */
+input.invalid,
+select.invalid,
+textarea.invalid {
+  border-color: #ff4444; /* Red border for error */
+  box-shadow: 0 0 8px #ff4444; /* Red glow */
+  outline: none; /* Remove default focus outline */
+}
