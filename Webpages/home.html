@@ -128,6 +128,19 @@ what new flavours you'd love to have added to the juicebar!
     <h3>
      Come Visit Us In Bloemfontein!
     </h3>
+    <!-- Map Section -->
+<section id="map-section" style="width: 100%; height: 400px; margin: 40px 0;">
+  <h2>Our Location</h2>
+  <gmpx-api-loader key="YOUR_API_KEY" solution-channel="GMP_GE_mapsandplacesautocomplete_v2">
+  </gmpx-api-loader>
+  <gmp-map center="40.749933,-73.98633" zoom="13" map-id="DEMO_MAP_ID">
+      <div slot="control-block-start-inline-start" class="place-picker-container">
+          <gmpx-place-picker placeholder="Enter an address"></gmpx-place-picker>
+      </div>
+      <gmp-advanced-marker></gmp-advanced-marker>
+  </gmp-map>
+</section>
+
     <p>
  <strong>Address:</strong>Bloemfontein CBD 112, 9330, FS South Africa<br>
 <strong>Operating Hours:</strong> <br>04:00 AM - 10:00 PM Monday - Friday<br>
