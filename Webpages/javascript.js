@@ -149,6 +149,3 @@ document.getElementById('signup-form').addEventListener('submit', function (e) {
       popup.style.display = 'none';
   }, 5000);
 });
-
-
-
