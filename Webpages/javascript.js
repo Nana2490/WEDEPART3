@@ -40,6 +40,7 @@ document.getElementById('enquiry-form').addEventListener('submit', function (e) 
   const form = e.target; // Reference to the form element
   const name = form.name;
   const email = form.email;
+  const telephone = form.telephone;
   const comments = form.comments;
 
   let isValid = true; // Flag to track overall form validity
@@ -60,6 +61,13 @@ document.getElementById('enquiry-form').addEventListener('submit', function (e) 
   if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
     email.classList.add('invalid');
     isValid = false;
+  }
+
+  // Validate Phone Number (required, must be a valid format)
+  const phonePattern = /^\+?[0-9\s()-]{7,15}$/; // Example pattern for phone numbers
+  if (!telephone.value.trim() || !phonePattern.test(telephone.value.trim())) {
+      telephone.classList.add('invalid');
+      isValid = false;
   }
 
   // Validate Comments (required, minimum 10 characters)
@@ -88,15 +96,5 @@ document.getElementById('enquiry-form').addEventListener('submit', function (e) 
     popup.style.display = 'none';
   }, 5000);
 });
-
-// Animate each progress bar width based on the percentage text content
-document.addEventListener('DOMContentLoaded', () => {
-  const progressBars = document.querySelectorAll('.progress-fill');
-  progressBars.forEach(bar => {
-    // Extract the numerical percentage from the text (e.g., "Strength 90%" -> "90%")
-    const percentage = bar.textContent.match(/\d+/)[0];
-    // Set the CSS width property to the percentage value
-    bar.style.width = percentage + '%';
-  });
-});
-
+ 
+//Added 2 extra js files for signup and contactus due to the code functioning in separate files for those 2 html files.

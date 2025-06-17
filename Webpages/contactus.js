@@ -1,3 +1,10 @@
+// Function to provide voice feedback using Web Speech API
+function speak(message) {
+  if (!('speechSynthesis' in window)) return; // Exit if API is unsupported
+  const utterance = new SpeechSynthesisUtterance(message);
+  utterance.lang = 'en-US'; // Set language to English US
+  window.speechSynthesis.speak(utterance);
+}
 // Listen for form submission event on the enquiry form
 document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault(); // Prevent the default form submission behavior
@@ -5,12 +12,13 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     const form = e.target; // Reference to the form element
     const name = form.name;
     const email = form.email;
+    const subject = form.subject;
     const comments = form.comments;
   
     let isValid = true; // Flag to track overall form validity
   
     // Clear previous invalid styles and error indications
-    [name, email, comments].forEach(field => {
+    [name, email, subject, comments].forEach(field => {
       field.classList.remove('invalid');
     });
   
@@ -27,6 +35,12 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
       isValid = false;
     }
   
+    //Validate Subject (required, simple minimum 2 characters)
+    if (!subject.value.trim() || subject.value.trim().length < 2) {
+      subject.classList.add('invalid');
+      isValid = false;
+    }
+
     // Validate Comments (required, minimum 10 characters)
     if (!comments.value.trim() || comments.value.trim().length < 10) {
       comments.classList.add('invalid');
