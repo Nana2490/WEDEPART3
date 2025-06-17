@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link href="style.css" rel="stylesheet">
-  <script defer src="javascript.js">
-  </script>
 </head>
 
 <body>
@@ -45,33 +43,35 @@
   </h1>
   <p>We'd love to hear from you through any of these options.
   </p> <br/>
-  <form id="enquiry-form" novalidate>
-      
-    <!-- Full Name input field -->
-    <label for="name">Full Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
 
-    <!-- Email input field -->
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
+  <form class="contact-form">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
 
-    <label for="subject">Subject:</label><br>
-    <input type="subject" id="subject" name="subject" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br><br>
 
-    <!-- Comments textarea -->
-    <label for="message">Please Enter Message:</label><br>
-    <textarea id="message" name="message" placeholder="Please enter your message..." rows="4" cols="40" required></textarea><br><br>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+    <br><br>
 
-    <!-- Submit button -->
-    <button type="submit">Send Message</button>
-  </form><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    <br><br>
+
+    <button type="submit">Send</button>
+</form>
+<script src="contactus.js"></script>
+
+
 
   <!-- 
     Pop-up div for displaying success or error messages.
     - Initially hidden by CSS
     - ARIA roles for accessibility (screen readers will notify user changes here)
   -->
-  <div id="popup" class="popup" role="alert" aria-live="assertive" aria-atomic="true"></div>
 
   <h2>Working Hours
   </h2>

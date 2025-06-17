@@ -89,66 +89,6 @@ document.getElementById('enquiry-form').addEventListener('submit', function (e) 
   }, 5000);
 });
 
-document.getElementById('signup-form').addEventListener('submit', function (e) {
-  console.log("Signup form submitted"); // Log when the form is submitted
-  e.preventDefault(); // Prevent default form submission behavior
-
-  const form = e.target; // Reference to the form element
-  const name = form.name;
-  const email = form.email;
-  const phone = form.phone;
-
-  let isValid = true; // Flag to track overall form validity
-
-  // Clear previous invalid styles and error indications
-  [name, email, phone].forEach(field => {
-      field.classList.remove('invalid');
-  });
-
-  // Validate Name (required, minimum 2 characters)
-  if (!name.value.trim() || name.value.trim().length < 2) {
-      console.log("Name is invalid"); // Log invalid name
-      name.classList.add('invalid');
-      isValid = false;
-  }
-
-  // Validate Email (required, simple regex check)
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
-      console.log("Email is invalid"); // Log invalid email
-      email.classList.add('invalid');
-      isValid = false;
-  }
-
-  // Validate Phone (required, minimum 10 characters)
-  if (!phone.value.trim() || phone.value.trim().length < 10) {
-      console.log("Phone is invalid"); // Log invalid phone
-      phone.classList.add('invalid');
-      isValid = false;
-  }
-
-  const popup = document.getElementById('popup'); // The pop-up div for messages
-
-  if (isValid) {
-      // If form is valid, display success message and speak it
-      popup.textContent = "Thank you! You'll hear from us soon.";
-      popup.style.display = 'block'; // Show the pop-up
-      console.log("Showing success message"); // Log success message
-      speak(popup.textContent);
-      form.reset(); // Reset the form fields
-  } else {
-      // If invalid, show error message and speak it
-      popup.textContent = "Error: Please fill in all fields correctly.";
-      popup.style.display = 'block'; // Show the pop-up
-      console.log("Showing error message"); // Log error message
-      speak(popup.textContent);
-  }
-
-  // Hide the pop-up after 5 seconds
-  setTimeout(() => {
-      popup.style.display = 'none';
-  }, 5000);
-});
 // Animate each progress bar width based on the percentage text content
 document.addEventListener('DOMContentLoaded', () => {
   const progressBars = document.querySelectorAll('.progress-fill');
@@ -159,3 +99,4 @@ document.addEventListener('DOMContentLoaded', () => {
     bar.style.width = percentage + '%';
   });
 });
+

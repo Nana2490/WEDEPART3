@@ -5,11 +5,11 @@
   <meta charset="UTF-8"/>
   <!-- Responsive meta tag to ensure proper scaling on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enquiries</title>
+  <title>Contact</title>
   <!-- Link to external CSS file -->
   <link href="style.css" rel="stylesheet">
   <!-- Link to external JavaScript file, loaded defer to run after HTML parsing -->
-  <script defer src="javascript.js"></script>
+  <script defer src="contactus.js"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         <li><a href="classes.html">Classes</a></li>
         <li><a href="signup.html">Signup</a></li>
         <li><a href="swimming.html">Swimming</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
         <li><a href="enquiries.html">Enquiries</a></li>
       </ul>
     </nav>
@@ -41,7 +41,7 @@
 
   <main>
     <!-- Page main headline -->
-    <h1>If you have any questions or comments, please let us know.</h1>
+    <h1>We Would Love To Connect With You.</h1>
 
     <!-- 
       Enquiry form with:
@@ -49,7 +49,7 @@
       - 'novalidate' disables native HTML validation (so JS can fully handle it)
       - ARIA attributes to improve accessibility (will be set in JS)
     -->
-    <form id="enquiry-form" novalidate>
+    <form id="contact-form" novalidate>
       
       <!-- Full Name input field -->
       <label for="name">Full Name:</label><br>
@@ -59,34 +59,58 @@
       <label for="email">Email:</label><br>
       <input type="email" id="email" name="email" required><br><br>
 
-      <label for="telephone">Phone Number:</label><br>
-            <input type="number" id="telephone" name="telephone" required>
+      <label for="text">Subject:</label><br>
+            <input type="text" id="subject" name="subject" required>
             <br><br>
 
       <!-- Comments textarea -->
       <label for="comments">Please Enter Comment:</label><br>
       <textarea id="comments" name="comments" placeholder="Enter your comments..." rows="4" cols="40" required></textarea><br><br>
-      
-      <label for="subject">Subject:</label>
-      <select id="subject" name="subject" required>
-          <option value="" disabled selected>Select a subject</option>
-          <option value="products information">Products Information</option>
-          <option value="service inquiry">Service Inquiry</option>
-          <option value="technical support">Technical Support</option>
-          <option value="other">Other</option>
-      </select>
-      <br /><br />
 
       <!-- Submit button -->
       <button type="submit">Submit</button>
     </form>
 
+    <h2>Working Hours
+    </h2>
+    <p>Monday - Friday<br>
+      07:00 A.M - 22:00 P.M
+    </p>
+    <h2>Telephone
+    </h2>
+    <p>+278340993455
+    </p>
+    <h2>Email
+    </h2>
+    <p>SheFit@za.org
+    </p>
+    <h2>Social Media
+    </h2>
+    <ul>
+      <li>
+        <a href="https://instagram.com" target="_blank" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" width="20" alt="Instagram" />
+        </a> Instagram:@Shefitness
+    </li><br><br>
+      <li> <a href="https://facebook.com" target="_blank" title="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/24/145/145802.png" width="20" alt="Facebook" />
+      </a>Facebook:Shefitness 
+      </li><br><br>
+      <li> 
+        <a href="https://tiktok.com" target="_blank" title="TikTok">
+          <img src="https://cdn-icons-png.flaticon.com/24/3046/3046121.png" width="20" alt="TikTok" />
+        </a> Tiktok:@shefitness
+        </li><br>
+    </ul>
+    <p>Dont forget to tag us in any and all photos taken here at SheFit Fitness Gym📸
+    </p>
     <!-- 
       Pop-up div for displaying success or error messages.
       - Initially hidden by CSS
       - ARIA roles for accessibility (screen readers will notify user changes here)
     -->
     <div id="popup" class="popup" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
 
     <!-- Spacer div to push footer down -->
     <div class="push-footer"></div> 
