@@ -149,3 +149,13 @@ document.getElementById('signup-form').addEventListener('submit', function (e) {
       popup.style.display = 'none';
   }, 5000);
 });
+// Animate each progress bar width based on the percentage text content
+document.addEventListener('DOMContentLoaded', () => {
+  const progressBars = document.querySelectorAll('.progress-fill');
+  progressBars.forEach(bar => {
+    // Extract the numerical percentage from the text (e.g., "Strength 90%" -> "90%")
+    const percentage = bar.textContent.match(/\d+/)[0];
+    // Set the CSS width property to the percentage value
+    bar.style.width = percentage + '%';
+  });
+});
