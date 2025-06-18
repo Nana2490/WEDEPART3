@@ -2,20 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Services</title>
-  <link href="style.css" rel="stylesheet">
-  <script defer src="Main Java Script Folder/classes.js">
-  </script>
+
+  <!-- Lightbox2 CSS from CDN -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    rel="stylesheet"
+  />
+  
+  <!-- Your own CSS -->
+  <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
   <header>
     <a href="home.html">
-      <img src="imageshefit/logo.png" width="100" />
+      <img src="imageshefit/logo.png" width="100" alt="SheFit Logo" />
     </a>
-<!-- Table Of Contents-->
     <h1>SheFit Fitness Gym</h1>
     <nav>
       <ul>
@@ -33,129 +38,151 @@
 
   <main>
     <h2>Membership Packages & Classes</h2>
-    <details class="dropdown">
-      <summary class="dropdown-summary"> Click Here To View Membership Packages</summary>
-      <div class="dropdown-content">
-    <table border="1">
-      <tr>
-        <th>Premium</th>
-        <th>Standard</th>
-        <th>Family Deal</th>
-      </tr>
-      <tr>
-        <td>
-          <ul>
-            <li>R450/month</li>
-            <li>Full gym access (Mon - Sun)</li>
-            <li>Free swimming</li>
-            <li>Free classes (Dance Fitness, Yoga, etc.)</li>
-            <li>1 personal training session per month</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>R300/month</li>
-            <li>Gym access (Mon - Sat)</li>
-            <li>Swimming not included</li>
-            <li>Pay-as-you-go classes (R30 each)</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>R800/month (4 people)</li>
-            <li>Full gym access</li>
-            <li>Free swimming</li>
-            <li>Discounted classes</li>
-          </ul>
-        </td>
-      </tr>
-    </div>
-    </details>
-    </table>
 
-    <br><br>
+    <details class="dropdown">
+      <summary class="dropdown-summary">
+        Click Here To View Membership Packages
+      </summary>
+      <div class="dropdown-content">
+        <table border="1">
+          <tr>
+            <th>Premium</th>
+            <th>Standard</th>
+            <th>Family Deal</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>R450/month</li>
+                <li>Full gym access (Mon - Sun)</li>
+                <li>Free swimming</li>
+                <li>Free classes (Dance Fitness, Yoga, etc.)</li>
+                <li>1 personal training session per month</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>R300/month</li>
+                <li>Gym access (Mon - Sat)</li>
+                <li>Swimming not included</li>
+                <li>Pay-as-you-go classes (R30 each)</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>R800/month (4 people)</li>
+                <li>Full gym access</li>
+                <li>Free swimming</li>
+                <li>Discounted classes</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </details>
+
+    <br /><br />
 
     <h2>Swimming Lesson Packages</h2>
-    <details class="dropdown"><!-- Div Class Drop Down for More Interactive Page-->
-      <!-- New Feature updated  from the coding from part 1 for Drop feature summary-->
-      <summary class="dropdown-summary">View Swimming Lesson Packages</summary> 
-      <div class="dropdown-table">
-    <table border="1">
-      <tr>
-        <th>Option A</th>
-        <th>Option B</th>
-        <th>Option C</th>
-      </tr>
-      <tr>
-        <td>
-          <ul>
-            <li>R200/month</li>
-            <li>1 lesson per week</li>
-            <li>Beginner level</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>R350/month</li>
-            <li>2 lessons per week</li>
-            <li>Intermediate level</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>R500/month</li>
-            <li>Unlimited lessons</li>
-            <li>All levels</li>
-            <li>Free swimming gear pack</li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-  </div>
-  </details>
 
-    <br><br>
+    <details class="dropdown">
+      <summary class="dropdown-summary">View Swimming Lesson Packages</summary>
+      <div class="dropdown-table">
+        <table border="1">
+          <tr>
+            <th>Option A</th>
+            <th>Option B</th>
+            <th>Option C</th>
+          </tr>
+          <tr>
+            <td>
+              <ul>
+                <li>R200/month</li>
+                <li>1 lesson per week</li>
+                <li>Beginner level</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>R350/month</li>
+                <li>2 lessons per week</li>
+                <li>Intermediate level</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>R500/month</li>
+                <li>Unlimited lessons</li>
+                <li>All levels</li>
+                <li>Free swimming gear pack</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </details>
+
+    <br /><br />
 
     <h1>We Provide On-Demand Classes</h1>
 
+    <!-- Each image wrapped with a link for Lightbox2 -->
     <h2>Strength Training</h2>
-    <img src="imageshefit/strengthclass.png" width="200" alt="Strength Training Class" />
+<a href="imageshefit/strengthclass.png" data-lightbox="classes" data-title="Strength Training Class">
+  <img src="imageshefit/strengthclass.png" width="200" alt="Strength Training Class" />
+</a>
 
-    <h2>Yoga Classes</h2>
-    <img src="imageshefit/yoga.png" width="200" alt="Yoga Class" />
+<h2>Yoga Classes</h2>
+<a href="imageshefit/yoga.png" data-lightbox="classes" data-title="Yoga Class">
+  <img src="imageshefit/yoga.png" width="200" alt="Yoga Class" />
+</a>
 
-    <h2>Pilates Classes</h2>
-    <img src="imageshefit/pilates.png" width="200" alt="Pilates Class" />
+<h2>Pilates Classes</h2>
+<a href="imageshefit/pilates.png" data-lightbox="classes" data-title="Pilates Class">
+  <img src="imageshefit/pilates.png" width="200" alt="Pilates Class" />
+</a>
 
-    <h2>Cardio Blast</h2>
-    <img src="imageshefit/cardioblast.png" width="200" alt="Cardio Blast Class" />
+<h2>Cardio Blast</h2>
+<a href="imageshefit/cardioblast.png" data-lightbox="classes" data-title="Cardio Blast Class">
+  <img src="imageshefit/cardioblast.png" width="200" alt="Cardio Blast Class" />
+</a>
 
-    <h2>Dance Fitness</h2>
-    <img src="imageshefit/dancefitness.png" width="200" alt="Dance Fitness Class" />
+<h2>Dance Fitness</h2>
+<a href="imageshefit/dancefitness.png" data-lightbox="classes" data-title="Dance Fitness Class">
+  <img src="imageshefit/dancefitness.png" width="200" alt="Dance Fitness Class" />
+</a>
 
-    <h2>HIIT Training</h2>
-    <img src="imageshefit/hiit.png" width="200" alt="HIIT Training" />
+<h2>HIIT Training</h2>
+<a href="imageshefit/hiit.png" data-lightbox="classes" data-title="HIIT Training">
+  <img src="imageshefit/hiit.png" width="200" alt="HIIT Training" />
+</a>
 
-    <h2>Swimming Lessons</h2>
-    <img src="imageshefit/aquaaerobics1.png" width="200" alt="Swimming Lessons" />
+<h2>Swimming Lessons</h2>
+<a href="imageshefit/aquaaerobics1.png" data-lightbox="classes" data-title="Swimming Lessons">
+  <img src="imageshefit/aquaaerobics1.png" width="200" alt="Swimming Lessons" />
+</a>
 
-    <h2>Aqua Aerobics</h2>
-    <img src="imageshefit/aquaaerobics2.png" width="200" alt="Aqua Aerobics Class" />
+<h2>Aqua Aerobics</h2>
+<a href="imageshefit/aquaaerobics2.png" data-lightbox="classes" data-title="Aqua Aerobics Class">
+  <img src="imageshefit/aquaaerobics2.png" width="200" alt="Aqua Aerobics Class" />
+</a>
 
-    <br><br>
+
+    <br /><br />
     <a href="signup.html">
       <button type="button">Join Now</button>
     </a>
-    <div class="push-footer"></div> <!-- Footer of the page updated coding from part 1 -->
-  </main>
 
+    <div class="push-footer"></div>
+  </main>
 
   <footer>
     <hr />
-    <p><strong>Privacy Statement:</strong> SheFit Fitness Gym is committed to protecting your personal information. We
-      do not share or sell your details to any third parties.</p>
-    <p>&copy; 2025 Mphatso Phiri. All rights reserved.
+    <p>
+      <strong>Privacy Statement:</strong> SheFit Fitness Gym is committed to protecting your personal information. We
+      do not share or sell your details to any third parties.
     </p>
+    <p>&copy; 2025 Mphatso Phiri. All rights reserved.</p>
     <p>
       Follow us:
       <a href="https://facebook.com" target="_blank" title="Facebook">
@@ -169,6 +196,12 @@
       </a>
     </p>
   </footer>
+
+  <!-- jQuery required by Lightbox2 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Lightbox2 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
 
 </html>

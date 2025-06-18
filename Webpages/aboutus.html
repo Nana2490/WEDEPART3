@@ -2,17 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us</title>
-  <link href="style.css" rel="stylesheet">
-  <script defer src="Main Java Script Folder/aboutus.js"></script>
+
+  <!-- Your Main CSS -->
+  <link href="style.css" rel="stylesheet" />
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
   <header>
     <a href="home.html">
-      <img src="imageshefit/logo.png" width="100" />
+      <img src="imageshefit/logo.png" width="100" alt="SheFit Gym Logo" />
     </a>
 
     <h1>SheFit Fitness Gym</h1>
@@ -34,68 +39,60 @@
     <h1>About Us</h1>
     <h2>Get Ready To Be the Best Version of Yourself with the Best Team Helping!</h2>
 
-    <p>At SheFit Fitness, the gym for females by females, we are committed to helping you reach those
+    <p>
+      At SheFit Fitness, the gym for females by females, we are committed to helping you reach those
       body goals that may seem impossible. This place was created with women in mind — from the decor,
       to the amenities, to the services. SheFit was founded by Mphatso’s desire to begin a women-only
-      gym after noticing the growing popularity of her women-only workout classes.</p>
+      gym after noticing the growing popularity of her women-only workout classes.
+    </p>
 
-    <p>Clients didn’t have a space where they could train freely without the male gaze or the peak-time
+    <p>
+      Clients didn’t have a space where they could train freely without the male gaze or the peak-time
       crowds (4–7 pm) that fill most major gyms. The goal is to make fitness an easy, enjoyable part of
-      every woman’s life.</p>
+      every woman’s life.
+    </p>
 
-    <h2>Meet Our Founder</h2>
-    <h3>Mphatso Phiri</h3>
-    <img src="imageshefit/owner.png" width="200" alt="Founder Mphatso Phiri" class="lightbox-trigger" />
-
-    <h2>Meet Our Trainers</h2>
-    <ul>
-      <li>
-        <strong>Lisa</strong><br />
-        <p>HIIT and Yoga Trainer</p>
-        <img src="imageshefit/gymtrainer.png" width="200" alt="Trainer Lisa" class="lightbox-trigger" />
-      </li><br />
-      <li>
-        <strong>Coach Rea</strong><br />
-        <p>Swim Coach and Aqua Aerobics Instructor</p>
-        <img src="imageshefit/rea.png" width="200" alt="Coach Rea" class="lightbox-trigger" />
-      </li><br />
-      <li>
-        <strong>Coach KB</strong><br />
-        <p>Strength Training and HIIT Trainer</p>
-        <img src="imageshefit/kb.png" width="200" alt="Coach KB" class="lightbox-trigger" />
-      </li><br />
-      <li>
-        <strong>Coach Lita</strong><br />
-        <p>Cardio Blast and Pilates Trainer</p>
-        <img src="imageshefit/lita.png" width="200" alt="Coach Lita" class="lightbox-trigger" />
-      </li><br />
-      <li>
-        <strong>Coach Chimmy</strong><br />
-        <p>Dance Fitness and Pilates Trainer</p>
-        <img src="imageshefit/chimmy.png" width="200" alt="Coach Chimmy" class="lightbox-trigger" />
-      </li>
-    </ul>
-
-    <h2>Want One-on-One Training?</h2>
-    <a href="book.html">
-      <button type="button">Book Session Now</button>
-    </a>
-    <br><br>
-    <h2>Amenities</h2>
-    <p>The following amenities are available at SheFit Fitness Gym:</p>
-    <ul>
-      <li>Breastfeeding Room</li>
-      <li>Pool</li>
-      <li>Steam Rooms</li>
-      <li>Juice Bar</li>
-    </ul>
-    <div class="push-footer"></div> <!-- Footer of the page updated coding from part 1 -->
+ <!-- Each image wrapped with a link for Lightbox2 -->
+ <h2>Founder
+ </h2>
+ <a href="imageshefit/owner.png" data-lightbox="trainers" data-title="founder Mphatso Phiri">
+   <img src="imageshefit/owner.png" width="300" alt="founder Mphatso Phiri" />
+ </a>
+ 
+ <h2>Lisa: HIIT & Yoga Trainer</h2>
+ <a href="imageshefit/gymtrainer.png" data-lightbox="trainers" data-title=" trainer Lisa - HIIT and Yoga Trainer">
+   <img src="imageshefit/gymtrainer.png" width="300" alt="trainer Lisa" />
+ </a>
+ 
+ <h2>Rea: Swim & Aqua Aerobics Trainer</h2>
+ <a href="imageshefit/rea.png" data-lightbox="trainers" data-title="trainer Rea - Swim & Aqua Aerobics">
+   <img src="imageshefit/rea.png" width="300" alt="trainer Rea" />
+ </a>
+ 
+ <h2>KB: Strength & HIIT Trainer</h2>
+ <a href="imageshefit/kb.png" data-lightbox="trainers" data-title="trainer KB - Strength & HIIT">
+   <img src="imageshefit/kb.png" width="300" alt="trainer KB" />
+ </a>
+ 
+ <h2>Lita: Cardio & Pilates Trainer</h2>
+ <a href="imageshefit/lita.png" data-lightbox="trainers" data-title="trainer Lita - Cardio & Pilates">
+   <img src="imageshefit/lita.png" width="300" alt="trainer Lita" />
+ </a>
+ 
+ <h2>Chimmy: Dance Fitness & Pilates Trainer</h2>
+ <a href="imageshefit/chimmy.png" data-lightbox="trainers" data-title="trainer Chimmy - dance fitness">
+   <img src="imageshefit/chimmy.png" width="300" alt="trainer Chimmy" />
+ </a>
+ 
+ <div class="push-footer"></div>
   </main>
 
   <footer>
     <hr />
-    <p><strong>Privacy Statement:</strong> SheFit Fitness Gym is committed to protecting your personal information. We
-      do not share or sell your details to any third parties.</p>
+    <p>
+      <strong>Privacy Statement:</strong> SheFit Fitness Gym is committed to protecting your personal information. We
+      do not share or sell your details to any third parties.
+    </p>
     <p>&copy; 2025 Mphatso Phiri. All rights reserved.</p>
     <p>
       Follow us:
@@ -105,4 +102,17 @@
       <a href="https://instagram.com" target="_blank" title="Instagram">
         <img src="imageshefit/instagramlogo.png" width="20" alt="Instagram" />
       </a>
-      <a href="https://tiktok
+      <a href="https://tiktok.com" target="_blank" title="TikTok">
+        <img src="imageshefit/tiktoklogo.png" width="20" alt="TikTok" />
+      </a>
+    </p>
+  </footer>
+
+  <!-- jQuery required by Lightbox2 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Lightbox2 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+</body>
+
+</html>
