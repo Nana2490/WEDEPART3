@@ -77,7 +77,7 @@ SheFit is an all-female fitness gym offering a variety of classes such as yoga, 
 - CSS3  
 - JavaScript (ES6+)  
 - Web Speech API (voice feedback)  
-- Lightbox2 (for image galleries)  
+- Lightbox2 (for image galleries) 
 - Embedded interactive map (Leaflet)  
 
 ---
@@ -147,18 +147,9 @@ SheFit is an all-female fitness gym offering a variety of classes such as yoga, 
 - The website layout is responsive and mobile-friendly.  
 
 ---
-
-## Known Issues & Future Improvements
-
-- Currently, form submissions do not connect to a backend server or database. Integrating with a backend or third-party service would enable real submissions.  
-- Add more detailed error messages for better user guidance.  
-- Optimize images further for faster page load speeds.  
-- Expand interactive map functionality with directions and route planning.  
-- Add animations or transitions for smoother user experience.  
-
----
 ## College
 Rosebank College Bloemfontein Campus
+
 ---
 
 ## Author
@@ -174,7 +165,38 @@ Mphatso Phiri
 This project is for academic purposes as part of a Portfolio of Evidence (POE) and is not intended for commercial use.
 
 ---
+## References
 
-Thank you for reviewing the SheFit Fitness Gym website project!
-
-
+- W3Schools, 2025. HTML Tutorial [Online] Available at: https://www.w3schools.com/html/ [Acessed 3 April. 2025]
+- iStock, 2019 Adults Swimming [image online]. Available at: https://images.app.goo.gl/dPQyBj2NRYYyj4dD6 [Accessed 4 April 2025]
+- Facebook, n.d. Facebook Logo [image online]. Available at: https://www.facebook.com/brand/resources [Accessed 4 April. 2025]
+- Instagram, n.d. Instagram Glyph Icon [image online]. Available at: https://www.instagram.com/brand [Accessed 4 April. 2025]
+- TikTok, n.d. TikTok Logo [image online]. Available at: https://www.tiktok.com/about/brand-and-marketing [Accessed 4 April. 2025]
+- iStock, 2023. Aqua Aerobics 2 [image online]. Available at: https://images.app.goo.gl/3dwNK5PYNczEY6qG9 [Accessed 4 April. 2025]
+- The Atrium Health Club n.d. Cardio Blast [image online]. Available at: https://images.app.goo.gl/ZqArapM5pR12A1W19 [Accessed 4 April. 2025]
+- Adobe Stock, n.d. Yoga [image online]. Available at: https://images.app.goo.gl/hN3w3XnpDPXK254A8 [Accessed 4 April. 2025]
+- LinkedIn, 2022. Strength Class [image online]. Available at: https://images.app.goo.gl/pnuMzjfNLqfFzw5o8 [Accessed 4 April. 2025]
+- iStock, 2022. Pilates [image online]. Available at: https://images.app.goo.gl/zg8BXVCTxuFz5He97 [Accessed 4 April. 2025]
+- shutterstock, 2018. HIIT Class [image online]. Available at: https://www.shutterstock.com/image-photo/women-doing-endurance-holding-hands-background-1241267854 [Accessed 4 April. 2025]
+- Dreamstime, n.d. Gym Logo [image online]. Available at: https://images.app.goo.gl/t32xrBeYXAvuiBUs9 [Accessed 4 April. 2025]
+- iStock, 2017. Dance Fitness [image online]. Available at: https://www.istockphoto.com/photo/friends-dancing-together-gm897892972-247745916 [Accessed 4 April. 2025]
+- iStock, 2018. Dance Trainer [image online]. Available at: https://www.istockphoto.com/photo/dance-fitness-gm1067009516-285348796?searchscope=image%2Cfilm [Accessed 4 April.2025]
+- iStock, 2022. Training Together [image online]. Available at: https://www.istockphoto.com/photo/latino-and-african-sport-woman-exercising-and-build-muscle-in-stadium-active-strong-gm1438034462-478653691?searchscope=image%2Cfilm [Accessed 4 April. 2025]
+- iStock, 2022. Gym Woman [image online]. Available at: https://www.istockphoto.com/photo/attractive-young-fit-woman-in-sportswear-stretching-isolated-on-orange-background-gm1362531414-434417466 [Accessed 4 April. 2025]
+- iStock, 2021. Woman Trainer Running [image online]. Available at: https://www.istockphoto.com/photo/young-sportswoman-using-fitness-tracker-while-exercising-on-treadmill-in-a-gym-gm1357825299-431621033?searchscope=image%2Cfilm [Accessed 4 April. 2025]
+- iStock, n.d. Woman Strength Training [image online]. Available at: https://www.shutterstock.com/search/female-athlete-gym [Accessed 4 April. 2025]
+- iStock, 2016. Indoor Swimming Pool [image online]. Available at: https://www.istockphoto.com/photo/bright-indoors-swimming-pool-gm619660586-108113011 [Accessed 4 April. 2025]
+- St Adobe Stock, n.d. Swimmig Pool Under Water [image online]. Available at: https://stock.adobe.com/search?k=swim&asset_id=83866376 [Accessed 4 April. 2025]
+- iStock, 2016. Aqua Aerobics Coach [image online]. Available at: https://www.istockphoto.com/photo/aqua-fitness-gm612718354-105602487 [Accessed 4 April. 2025]
+- iStock, 2024. Woman Working Out With Barbell [image online]. Available at: https://www.istockphoto.com/photo/young-sportswoman-working-out-with-a-barbell-in-health-club-gm2027278444-561793359 [Accesssed 4 April. 2025]
+- iStock, 2014. Toddlers Swimming [image online]. Available at: https://www.istockphoto.com/photo/young-sportswoman-working-out-with-a-barbell-in-health-club-gm2027278444-561793359 [Accessed 4 April. 2025]
+- iStock, 2016. Heavy Weight [image online]. Available at: https://www.istockphoto.com/photo/heavy-weight-exercise-gm625739874-110247389 [Accessed 4 April.2025]
+- iStock, 2023. Gym Trainer [image online]. Available at: https://www.istockphoto.com/photo/black-woman-fitness-and-coach-with-arms-crossed-and-smile-for-training-exercise-or-gm1475273176-504824794?searchscope=image%2Cfilm [Accessed 4 April. 2025]
+- iStock, 2018. Lactation Room [image online]. Available at: https://www.istockphoto.com/photo/bottles-with-breast-milk-on-the-background-of-mother-holding-in-her-hands-and-gm935974562-256049489 [Accessed 4 April. 2025]
+- iStock, 2016. Running Clucb [image online]. Available at: https://www.istockphoto.com/photo/energy-is-contagious-gm540577008-96550387 [Accessed 4 April. 2025]
+- iStock, 2018. Juice Bar [image online]. Available at: https://www.istockphoto.com/photo/close-up-of-fresh-fruit-smoothies-and-juices-in-a-row-for-sale-on-vegetarian-market-gm1070097282-286284232 [Accessed 4 April. 2025]
+- Thank you for reviewing the SheFit Fitness Gym website project!
+- shutterstock, 2018. Well Rested [image online]. Available at: https://www.shutterstock.com/image-photo/side-view-young-calm-woman-260nw-2464471257.jpg [Accessed 3 May. 2025]
+-shutterstock, 2018. Hydrated [image online]. Available at: https://www.shutterstock.com/image-photo/sports-equipment-training-hall-water-dumbbells-2187354331 [Accessed 3 May. 2025]
+- shutterstock, 2018. Black And Purple Background [image online]. Available at: https://www.shutterstock.com/image-photo/squats-sportive-woman-sportswear-sportsfoot-training-2253899927 [Accessed 3 May. 2025]
+- shutterstock, 2018. Purple Background Stretching [image online]. Available at: https://www.shutterstock.com/image-photo/horizontal-indoor-shot-joyful-well-260nw-1626453373.jpg [Accessed 3 May. 2025]
