@@ -52,7 +52,7 @@ function speak(message) {
     
       if (isValid) {
         // If form is valid, display success message and speak it
-        popup.textContent = "Thank you! You'll hear from us soon.";
+        popup.textContent = "Thank you! We look forward to Having You As A Member.";
         popup.style.display = 'block'; // Show the pop-up
         speak(popup.textContent);
         form.reset(); // Reset the form fields
