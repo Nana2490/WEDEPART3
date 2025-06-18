@@ -486,4 +486,14 @@ body {
 .place-picker-container {
   padding: 20px;
 }
+/* Map Styling for the features of the map that has been added */
+
+#map {
+  height: 500px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  border: 2px solid hotpink;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 

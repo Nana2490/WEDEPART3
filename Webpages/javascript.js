@@ -97,4 +97,3 @@ document.getElementById('enquiry-form').addEventListener('submit', function (e) 
   }, 5000);
 });
  
-//Added 2 extra js files for signup and contactus due to the code functioning in separate files for those 2 html files.
