@@ -59,7 +59,7 @@ document.getElementById('signup-form').addEventListener('submit', function (e) {
     // Redirect after short delay (to allow speech and user feedback)
     setTimeout(() => {
       window.location.href = 'thankyou2.html';
-    }, 3000); // 3 seconds delay
+    }, 5000); // 5 seconds delay
   } else {
     // Error message
     popup.textContent = "Error: Please fill in all fields correctly.";
