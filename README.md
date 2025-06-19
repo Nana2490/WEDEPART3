@@ -12,6 +12,10 @@ SheFit is an all-female fitness gym offering a variety of classes such as yoga, 
 
 ---
 
+## ScreenShots
+I have attached my screenshots of all the pages that the website displays the changes of my website while also displaying the styling of the whole website under my imageshefit folder, under part 3 images file
+
+---
 ## Features
 
 - **Multi-page website:** Home, About Us, Classes, Swimming, Signup, Contact Us, Enquiries, Booking, and Thank You pages  
