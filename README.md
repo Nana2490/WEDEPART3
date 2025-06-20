@@ -70,7 +70,7 @@ I have attached my screenshots of all the pages that the website displays the ch
 - Ensured consistent navigation and page elements unify the website’s look and feel.  
 - Cleaned up and optimized HTML code for About Us and Classes pages, removing redundant markup and improving semantic structure.  
 - Added Lightbox2 integration for image galleries on About Us and Classes pages.  
-- Added interactive map functionality on Contact Us page for easy location discovery.  
+- Added interactive map functionality on Home page for easy location discovery.  
 - Modularized JavaScript files for better maintainability (`contactus.js`, `enquiries.js`, `signup.js`, `map.js`, and a general `javascript.js`). 
 
 ---
